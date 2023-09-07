@@ -1,0 +1,22 @@
+name: backend
+on: 
+    push:
+        branches:
+        - master
+jobs:
+    copy_files_to_ec2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Checkout repository"
+              uses: actions/checkout@v3
+            - run: pwd
+            - name: "Copying Files"
+              uses: garygrossgarten/github-action-scp@release
+              with:
+                local: /home/runner/work/backend-/backend-/
+                remote: /home/ubuntu/_work/backend-/backend-
+                host: 65.0.75.253 
+                username: ubuntu
+                password: 1234
+
+
