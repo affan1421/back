@@ -13,8 +13,8 @@ jobs:
             - name: "Copying Files"
               uses: garygrossgarten/github-action-scp@release
               with:
-                local: /home/runner/work/backend-/backend-/
-                remote: /home/ubuntu/_work/backend-/backend-
+                local: /home/runner/work/back/back
+                remote: /home/ubuntu/_work/back/back
                 host: 65.0.75.253 
                 username: ubuntu
                 password: 1234
