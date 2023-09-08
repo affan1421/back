@@ -24,6 +24,6 @@ jobs:
           steps:
                 - run: pwd
                 - run: npm install
-                - run: pm2 restart backend
+                - run: pm2 restart back
 
 
