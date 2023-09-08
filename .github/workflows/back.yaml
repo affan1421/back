@@ -15,7 +15,7 @@ jobs:
               with:
                 local: /home/runner/work/back/back
                 remote: /home/ubuntu/_work/back/back
-                host: 65.0.75.253 
+                host: 65.0.75.253
                 username: ubuntu
                 password: 1234
 
